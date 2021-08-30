@@ -2,10 +2,11 @@
   background-color: orange;
   color: white;
   font-weight: 800;
-  width: 100%;
+  display: block;
+  width: 350px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(250, 195, 94, 0.247);
   border: none;
   height: 40px;
-  margin-top: 0.6rem;
+  margin: 1rem auto 0 auto;
 }

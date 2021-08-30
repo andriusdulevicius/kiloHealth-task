@@ -1,0 +1,33 @@
+.one-card {
+  width: 30%;
+  padding: 16px;
+  box-shadow: 5px 5px 5px 5px rgba(192, 192, 192, 0.178);
+}
+
+.one-card h3 {
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.one-card h5 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  font-size: 0.7rem;
+}
+
+.one-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.one-card p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.btn {
+  margin-top: 1rem;
+}
