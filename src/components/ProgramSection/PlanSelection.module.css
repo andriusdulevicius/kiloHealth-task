@@ -1,0 +1,14 @@
+.selection {
+  width: 50%;
+}
+
+.selection p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.selection img {
+  max-width: 80%;
+  margin: 0 10%;
+}

@@ -1,7 +1,28 @@
+* {
+  font-family: 'Helvetica Neue';
+}
+
 .main-color {
   color: orange;
 }
 
 .d-flex {
   display: flex;
+  gap: 2rem;
+}
+
+.App {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.fa-check-circle-o {
+  color: rgb(201, 201, 201);
+  background-color: rgb(201, 201, 201);
+  border-radius: 50%;
+}
+
+.fa-check-circle {
+  color: orange;
+  font-weight: normal;
 }

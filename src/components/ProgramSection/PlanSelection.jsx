@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import PlanCard from './PlanCard';
 import Button from './../../UI/Button';
+import classes from './PlanSelection.module.css';
+import image from '../../static/safe-checkout.png';
+import Subtitle from './../../UI/Subtitle';
 
 const PlanSelection = () => {
   const [membershipPlans, setMembershipPlans] = useState([
@@ -28,10 +31,10 @@ const PlanSelection = () => {
   ]);
 
   return (
-    <div>
-      <h2>
+    <div className={classes.selection}>
+      <Subtitle>
         Choose your plan and get <span className='main-color'>7 days free trial</span>
-      </h2>
+      </Subtitle>
       {membershipPlans.map((onePlan) => (
         <PlanCard plan={onePlan} key={onePlan.id} />
       ))}
@@ -43,7 +46,7 @@ const PlanSelection = () => {
       <p>
         By choosing a payment method you agree to the <a href='/'>T&amp;Cs</a> and <a href='/'>Privacy Policy</a>
       </p>
-      <img src='../../static/safe-checkout' alt='safe checkout icons' />
+      <img src={image} alt='safe checkout icon' />
     </div>
   );
 };

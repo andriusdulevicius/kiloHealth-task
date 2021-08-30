@@ -1,8 +1,25 @@
 .perk {
   display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .perk i {
   width: 30px;
   height: 30px;
+}
+
+.icon {
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.perk h4 {
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+.perk span {
+  font-size: 0.8rem;
 }

@@ -1,5 +1,54 @@
+.card {
+  border-radius: 16px;
+  height: 80px;
+  border: 2px solid rgba(190, 190, 190, 0.911);
+  padding: 16px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card:hover,
+.active {
+  cursor: pointer;
+  border: 2px solid orange;
+}
+.card h4 {
+  margin: 0;
+}
+
+.discount {
+  width: 80px;
+  height: 20px;
+  border-radius: 6px;
+  padding: 8px;
+  margin-left: 1rem;
+  background-color: rgb(255, 197, 88);
+  font-size: 12px;
+}
+
+.card h5 {
+  font-weight: normal;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.main-price {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.main-price small {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
 .line-through {
   text-decoration: line-through;
   opacity: 0.8;
   margin-right: 0.3rem;
+}
+
+.card i {
+  border-radius: 50%;
 }

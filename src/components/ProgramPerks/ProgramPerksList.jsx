@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import PerkItem from './PerkItem';
+import classes from './ProgramPerksList.module.css';
+import Subtitle from './../../UI/Subtitle';
 
 const ProgramPerksList = () => {
   const [perks, setPerks] = useState([
@@ -40,8 +42,8 @@ const ProgramPerksList = () => {
     },
   ]);
   return (
-    <div>
-      <h2>Whats in our program? </h2>
+    <div className={classes['perk-list']}>
+      <Subtitle>Whats in our program? </Subtitle>
       <ul>
         {perks.map((perk) => (
           <PerkItem perk={perk} key={perk.title} />
