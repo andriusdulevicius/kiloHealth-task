@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import PlanCard from './PlanCard';
+import Button from './../../UI/Button';
 
 const PlanSelection = () => {
   const [membershipPlans, setMembershipPlans] = useState([
     {
       id: 'p1',
       contractLength: 6,
-      monthlyPrice: 18.98,
+      monthlyPrice: 19.98,
       discountPercentage: 50,
       billPeriod: 6,
     },
@@ -29,12 +30,12 @@ const PlanSelection = () => {
   return (
     <div>
       <h2>
-        Choose your plan and get <span>7 days free trial</span>
+        Choose your plan and get <span className='main-color'>7 days free trial</span>
       </h2>
       {membershipPlans.map((onePlan) => (
         <PlanCard plan={onePlan} key={onePlan.id} />
       ))}
-      <button>Get your plan</button>
+      <Button>Get your plan</Button>
       <p>
         Your free trial will automatically become a paid subscription on the 8th day after you begin your trial. to
         cancel your subscription, please contact us at least 24 hours before the end of the trial period.

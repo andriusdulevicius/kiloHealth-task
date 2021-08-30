@@ -1,0 +1,8 @@
+.perk {
+  display: flex;
+}
+
+.perk i {
+  width: 30px;
+  height: 30px;
+}
