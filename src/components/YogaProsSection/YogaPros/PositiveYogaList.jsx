@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import classes from './PositiveYogaList.module.css';
-import Subtitle from './../../UI/Subtitle';
+import Subtitle from '../../../UI/Subtitle';
 
 const PositiveYogaList = () => {
   const [yogaPros, setYogaPros] = useState([

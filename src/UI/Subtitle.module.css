@@ -1,5 +1,10 @@
 .title {
-  /* height: 4.4rem; */
   font-size: 0.9rem;
   margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    height: 4.4rem;
+  }
 }

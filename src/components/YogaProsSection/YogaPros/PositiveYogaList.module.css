@@ -22,3 +22,9 @@
   font-size: 1.1rem;
   margin: 0.3rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .pros-list {
+    width: 50%;
+  }
+}

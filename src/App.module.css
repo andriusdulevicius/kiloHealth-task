@@ -6,3 +6,12 @@
   width: 90%;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+  .background {
+    background-color: rgba(236, 234, 234, 0.658);
+  }
+}

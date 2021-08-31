@@ -28,8 +28,10 @@ const PlanCard = ({ plan }) => {
         {billPeriod > 1 && (
           <h5>
             <span className={discountPercentage > 0 && classes['line-through']}> {`$${fullPeriodPrice}`}</span>
-            {discountPercentage > 0 && <span className='main-color'>{`$${fullPeriodDiscountedPrice}`}</span>} billed
-            every {billPeriod} months
+            {discountPercentage > 0 && (
+              <span className={classes['main-color']}>{`$${fullPeriodDiscountedPrice}`}</span>
+            )}{' '}
+            billed every {billPeriod} months
           </h5>
         )}
       </div>

@@ -1,3 +1,5 @@
+@import '../../Globalstyles.css';
+
 .perk {
   display: flex;
   align-items: center;
@@ -22,4 +24,5 @@
 
 .perk span {
   font-size: 0.8rem;
+  color: var(--secondary-dark);
 }

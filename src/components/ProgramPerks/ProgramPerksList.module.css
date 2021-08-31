@@ -3,3 +3,9 @@
   margin-top: 1rem;
   padding: 0;
 }
+
+@media screen and (min-width: 1024px) {
+  .perk-list ul {
+    margin-top: 0;
+  }
+}

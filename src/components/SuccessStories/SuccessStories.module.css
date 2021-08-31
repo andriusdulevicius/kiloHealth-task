@@ -2,9 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+
   margin-bottom: 2rem;
 }
 .success h2 {
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
 }

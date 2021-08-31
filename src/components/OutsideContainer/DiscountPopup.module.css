@@ -11,3 +11,9 @@
 .discount strong {
   margin-left: 0.5rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .discount {
+    justify-content: center;
+  }
+}

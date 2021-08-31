@@ -4,3 +4,11 @@
   padding: 0.8rem 0;
   border-bottom: 0.06rem solid var(--secondary-color);
 }
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    padding: 1.2rem 0;
+    background-color: snow;
+    border-bottom: none;
+  }
+}

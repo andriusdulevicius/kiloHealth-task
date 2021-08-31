@@ -1,0 +1,8 @@
+@media screen and (min-width: 1024px) {
+  .pros-section {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    justify-content: center;
+  }
+}

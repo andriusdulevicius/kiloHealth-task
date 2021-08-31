@@ -9,7 +9,8 @@
 
 .selection p {
   font-size: 0.8rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
+  margin-top: 0.4rem;
 }
 
 .selection img {
@@ -18,4 +19,14 @@
 
 .main-color {
   color: var(--main-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .selection {
+    width: 50%;
+  }
+
+  .selection Button {
+    width: 100%;
+  }
 }
