@@ -6,9 +6,9 @@
   font-weight: 800;
   display: block;
   min-width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(250, 195, 94, 0.247);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(250, 195, 94, 0.247);
   border: none;
-  height: 40px;
+  height: 2.5rem;
   margin: 1rem 0;
 }

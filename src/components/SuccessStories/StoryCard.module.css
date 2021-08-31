@@ -1,7 +1,7 @@
 .one-card {
   width: 100%;
-  padding: 16px;
-  box-shadow: 5px 5px 5px 5px rgba(192, 192, 192, 0.178);
+  padding: 1rem;
+  box-shadow: 0.35rem 0.35rem 0.35rem 0.35rem rgba(192, 192, 192, 0.178);
 }
 
 .one-card h3 {
@@ -17,8 +17,8 @@
 }
 
 .one-card img {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   object-fit: cover;
   margin-top: 1rem;
 }

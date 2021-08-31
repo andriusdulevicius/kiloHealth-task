@@ -1,10 +1,10 @@
 @import '../../Globalstyles.css';
 .card {
-  border: 1px solid var(--secondary-color);
+  border: 0.06rem solid var(--secondary-color);
   border-radius: 1rem;
   padding: 0.7rem;
   margin: 1rem 0;
-  min-height: 70px;
+  min-height: 4.4rem;
 }
 
 .card div {
