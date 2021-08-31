@@ -33,7 +33,7 @@ const PlanSelection = () => {
   return (
     <div className={classes.selection}>
       <Subtitle>
-        Choose your plan and get <span className='main-color'>7 days free trial</span>
+        Choose your plan and get <span className={classes['main-color']}>7 days free trial</span>
       </Subtitle>
       {membershipPlans.map((onePlan) => (
         <PlanCard plan={onePlan} key={onePlan.id} />

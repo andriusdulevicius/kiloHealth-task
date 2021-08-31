@@ -1,8 +1,10 @@
+@import '../../Globalstyles.css';
+
 .card {
   width: 100%;
   border-radius: 16px;
   height: 110px;
-  border: 2px solid rgba(190, 190, 190, 0.911);
+  border: 2px solid var(--secondary-color);
   padding: 16px;
   margin-bottom: 0.5rem;
   display: flex;
@@ -13,7 +15,7 @@
 .card:hover,
 .active {
   cursor: pointer;
-  border: 2px solid orange;
+  border: 2px solid var(--main-color);
 }
 .card h4 {
   margin: 0;
@@ -25,7 +27,7 @@
   border-radius: 6px;
   padding: 5px 8px;
   margin-left: 1rem;
-  background-color: rgb(255, 197, 88);
+  background-color: var(--primary-light);
   font-size: 12px;
 }
 
@@ -52,4 +54,15 @@
 
 .card i {
   border-radius: 50%;
+}
+
+.icon-empty {
+  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.icon-filled {
+  color: var(--main-color);
+  font-weight: normal;
 }

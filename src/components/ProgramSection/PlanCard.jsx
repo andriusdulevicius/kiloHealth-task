@@ -34,7 +34,14 @@ const PlanCard = ({ plan }) => {
         )}
       </div>
       <div>
-        <i type='checkbox' className={checkedPlan ? 'fa fa-check-circle' : 'fa fa-check-circle-o'} />
+        <i
+          type='checkbox'
+          className={
+            checkedPlan
+              ? `fa fa-check-circle ${classes['icon-filled']}`
+              : `fa fa-check-circle-o ${classes['icon-empty']}`
+          }
+        />
       </div>
     </div>
   );

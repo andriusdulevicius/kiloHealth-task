@@ -1,5 +1,7 @@
+@import '../../Globalstyles.css';
+
 .ratings {
-  color: rgb(211, 190, 1);
+  color: var(--primary-light);
 }
 
 .ratings i {

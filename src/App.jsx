@@ -1,4 +1,4 @@
-import './App.css';
+import classes from './App.module.css';
 import Header from './components/Header/Header';
 import DiscountPopup from './components/OutsideContainer/DiscountPopup';
 import Logo from './components/OutsideContainer/Logo';
@@ -11,13 +11,13 @@ import Faq from './components/FAQ/Faq';
 function App() {
   return (
     <>
-      <div className='outside-container'>
+      <div className={classes['outside-container']}>
         <DiscountPopup />
         <div>
           <Logo />
         </div>
       </div>
-      <div className='container'>
+      <div className={classes.container}>
         <Header />
         <ProgramSection />
         <SuccessStories />

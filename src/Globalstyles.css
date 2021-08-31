@@ -1,0 +1,14 @@
+/* Global styles */
+
+* {
+  font-family: 'Helvetica Neue';
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --main-color: rgba(255, 148, 9, 0.774);
+  --primary-light: rgba(243, 234, 107, 0.795);
+  --secondary-color: rgba(218, 214, 214, 0.562);
+}
+

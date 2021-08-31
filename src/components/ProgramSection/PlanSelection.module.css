@@ -1,3 +1,5 @@
+@import '../../Globalstyles.css';
+
 .selection {
   width: 100%;
 }
@@ -12,4 +14,8 @@
 
 .selection img {
   max-width: 80%;
+}
+
+.main-color {
+  color: var(--main-color);
 }

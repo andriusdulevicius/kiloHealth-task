@@ -1,4 +1,6 @@
+@import '../../Globalstyles.css';
+
 .logo {
   padding: 0.8rem 0;
-  border-bottom: 1px solid rgba(199, 198, 198, 0.452);
+  border-bottom: 1px solid var(--secondary-color);
 }
