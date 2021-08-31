@@ -16,7 +16,7 @@ const PlanCard = ({ plan }) => {
 
   return (
     <div className={`${classes.card} ${checkedPlan && classes.active}`} onClick={planActivationHandler}>
-      <div className='details'>
+      <div className={classes.details}>
         <h4>
           {contractLength} month plan
           {discountPercentage > 0 && <span className={classes.discount}>Save {discountPercentage}%</span>}
@@ -27,9 +27,9 @@ const PlanCard = ({ plan }) => {
         {billPeriod === 1 && <h5>Billed monthly</h5>}
         {billPeriod > 1 && (
           <h5>
-            <span className={discountPercentage > 0 && classes['line-through']}> {fullPeriodPrice}</span>
-            {discountPercentage > 0 && <span className='main-color'>{fullPeriodDiscountedPrice}</span>} billed every{' '}
-            {billPeriod} months
+            <span className={discountPercentage > 0 && classes['line-through']}> {`$${fullPeriodPrice}`}</span>
+            {discountPercentage > 0 && <span className='main-color'>{`$${fullPeriodDiscountedPrice}`}</span>} billed
+            every {billPeriod} months
           </h5>
         )}
       </div>

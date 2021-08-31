@@ -1,5 +1,6 @@
 .cards {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;

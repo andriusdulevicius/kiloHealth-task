@@ -2,19 +2,15 @@
 
 * {
   font-family: 'Helvetica Neue';
+  box-sizing: border-box;
 }
 
 .main-color {
   color: orange;
 }
 
-.d-flex {
-  display: flex;
-  gap: 2rem;
-}
-
 .App {
-  width: 60%;
+  width: 95%;
   margin: 0 auto;
 }
 

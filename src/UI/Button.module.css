@@ -3,10 +3,10 @@
   color: white;
   font-weight: 800;
   display: block;
-  width: 350px;
+  min-width: 100%;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(250, 195, 94, 0.247);
   border: none;
   height: 40px;
-  margin: 1rem auto 0 auto;
+  margin-top: 1rem;
 }

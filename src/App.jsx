@@ -6,7 +6,7 @@ import SuccessStories from './components/SuccessStories/SuccessStories';
 function App() {
   return (
     <div className='App'>
-      <div className='d-flex'>
+      <div className='plans-container'>
         <PlanSelection />
         <ProgramPerksList />
       </div>
