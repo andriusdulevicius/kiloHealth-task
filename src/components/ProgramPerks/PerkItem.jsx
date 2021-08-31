@@ -3,10 +3,8 @@ import classes from './PerkItem.module.css';
 const PerkItem = ({ perk }) => {
   return (
     <li className={classes.perk}>
-      <div className={classes.icon}>
-        <i className={perk.icon}></i>
-      </div>
-      <div className='perk-info'>
+      <span className={`${classes.icon} ${classes[perk.icon]}`}></span>
+      <div>
         <h4>{perk.title}</h4>
         <span>{perk.subtitle}</span>
       </div>

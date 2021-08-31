@@ -1,8 +1,10 @@
 .one-card {
   width: 100%;
   padding: 1rem;
+  min-height: 34rem;
   box-shadow: 0.35rem 0.35rem 0.35rem 0.35rem rgba(192, 192, 192, 0.178);
   border-radius: 0.8rem;
+  margin: 2rem 0;
 }
 
 .one-card h3 {
@@ -34,7 +36,5 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .one-card {
-    width: 32%;
-  }
+  
 }

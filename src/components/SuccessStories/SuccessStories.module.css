@@ -1,15 +1,21 @@
 .cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .success h2 {
   text-align: center;
 }
 
+.success img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1024px) {
+  .success {
+    display: block;
+    box-sizing: unset;
+  }
   .cards {
     flex-wrap: nowrap;
     justify-content: space-around;

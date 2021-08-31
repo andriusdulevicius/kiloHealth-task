@@ -6,7 +6,7 @@ import Subtitle from './../../UI/Subtitle';
 const ProgramPerksList = () => {
   const [perks, setPerks] = useState([
     {
-      icon: 'fa fa-list-alt',
+      icon: 'icon1',
       title: 'A personalized yoga program',
       subtitle: 'Completely safe and focused on your key goals',
     },

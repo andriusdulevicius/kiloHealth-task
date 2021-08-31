@@ -1,7 +1,13 @@
 /* Global styles */
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF Pro Display Regular'), url('./static/fonts/SFPRODISPLAYREGULAR.woff') format('woff');
+}
 
 * {
-  font-family: 'Helvetica Neue';
+  font-family: 'SF Pro Display Regular';
   box-sizing: border-box;
   margin: 0;
 }

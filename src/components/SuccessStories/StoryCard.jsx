@@ -3,7 +3,7 @@ import classes from './StoryCard.module.css';
 import Ratings from './Ratings';
 
 const StoryCard = (props) => {
-  const { name, age, location, rating, imgUrl, story } = props.story;
+  const { name, age, location, rating, imgUrl, story, active } = props.story;
   return (
     <div className={classes['one-card']}>
       <h3>

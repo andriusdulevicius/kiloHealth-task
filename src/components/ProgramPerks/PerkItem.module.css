@@ -12,9 +12,14 @@
 }
 
 .icon {
-  font-size: 2rem;
-  text-align: center;
+  width: 3rem;
+  height: 3rem;
   margin-right: 1rem;
+  object-fit: contain;
+}
+
+.icon1 {
+  background: url('../../static/icons/icon1.svg') no-repeat;
 }
 
 .perk h4 {

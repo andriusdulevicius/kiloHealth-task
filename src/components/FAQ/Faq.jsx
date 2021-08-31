@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import Button from '../../UI/Button';
 import Subtitle from '../../UI/Subtitle';
 import QACard from './QACard';
+import classes from './Faq.module.css';
 
 const Faq = () => {
-  const [questionsAnswers, setQuestionsAnswers] = useState([
+  const questionsAnswers = [
     {
       id: 'q1',
       question: 'What happens after I order?',
@@ -28,10 +28,10 @@ const Faq = () => {
       answer:
         'We are aiming to offer our clients the best experience, which comes with a lot of work.  The entire yoga program is developed by our large team of experts that work long hours to prepare effective, trustworthy and enjoyable content and workouts that can help you to reach your goals. The program is also completely free of ads and is constantly being updated based on your feedback! ',
     },
-  ]);
+  ];
 
   return (
-    <section>
+    <section className={classes.faq}>
       <Subtitle>Frequently Asked Questions</Subtitle>
       <div>
         {questionsAnswers.map((QAObj) => (
