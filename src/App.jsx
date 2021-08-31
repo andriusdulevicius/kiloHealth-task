@@ -1,17 +1,32 @@
 import './App.css';
-import PlanSelection from './components/ProgramSection/PlanSelection';
-import ProgramPerksList from './components/ProgramPerks/ProgramPerksList';
+import Header from './components/Header/Header';
+import DiscountPopup from './components/Header/DiscountPopup';
+import Logo from './components/Header/Logo';
+import ProgramSection from './components/ProgramSection/ProgramSection';
 import SuccessStories from './components/SuccessStories/SuccessStories';
+import PositiveYogaList from './components/YogaPros/PositiveYogaList';
+import YogaJourney from './components/YogaJourney/YogaJourney';
+import Faq from './components/FAQ/Faq';
 
 function App() {
   return (
-    <div className='App'>
-      <div className='plans-container'>
-        <PlanSelection />
-        <ProgramPerksList />
+    <>
+      <div className='outside-container'>
+        <DiscountPopup />
+        <div>
+          <Logo />
+        </div>
       </div>
-      <SuccessStories />
-    </div>
+      <div className='container'>
+        <Header />
+        <ProgramSection />
+        <SuccessStories />
+        <PositiveYogaList />
+        <YogaJourney />
+        <Faq />
+        <ProgramSection />
+      </div>
+    </>
   );
 }
 

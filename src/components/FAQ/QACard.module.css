@@ -1,0 +1,39 @@
+.card {
+  border: 1px solid rgb(214, 211, 211);
+  border-radius: 1rem;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  min-height: 70px;
+}
+
+.card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card i {
+  font-size: 1.6rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+}
+
+.open {
+  height: auto;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.closed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition-duration: 1s;
+}

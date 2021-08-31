@@ -46,7 +46,7 @@ const SuccessStories = () => {
       <Subtitle>Hear success stories from our clients</Subtitle>
       <div className={classes.cards}>
         {stories.map((story) => (
-          <StoryCard story={story} />
+          <StoryCard key={story.id} story={story} />
         ))}
       </div>
       <Button className={classes.btn}>Get my plan</Button>

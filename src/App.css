@@ -3,14 +3,18 @@
 * {
   font-family: 'Helvetica Neue';
   box-sizing: border-box;
+  margin: 0;
 }
 
 .main-color {
   color: orange;
 }
-
-.App {
-  width: 95%;
+.outside-container {
+  width: 100%;
+  text-align: center;
+}
+.container {
+  width: 90%;
   margin: 0 auto;
 }
 
