@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
-import DiscountPopup from './components/Header/DiscountPopup';
-import Logo from './components/Header/Logo';
+import DiscountPopup from './components/OutsideContainer/DiscountPopup';
+import Logo from './components/OutsideContainer/Logo';
 import ProgramSection from './components/ProgramSection/ProgramSection';
 import SuccessStories from './components/SuccessStories/SuccessStories';
 import PositiveYogaList from './components/YogaPros/PositiveYogaList';

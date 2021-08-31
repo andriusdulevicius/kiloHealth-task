@@ -1,0 +1,13 @@
+.discount {
+  background-color: rgba(104, 200, 245, 0.671);
+  padding: 1rem 0;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+
+.discount strong {
+  margin-left: 0.5rem;
+}
