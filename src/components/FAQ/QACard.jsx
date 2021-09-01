@@ -10,10 +10,10 @@ const QACard = (props) => {
   };
 
   return (
-    <div className={classes.card}>
+    <div className={classes.card} onClick={answerShowHandler}>
       <div>
         <h3>{question}</h3>
-        <i className={!answerState ? 'fa fa-angle-down' : 'fa fa-angle-up'} onClick={answerShowHandler}></i>
+        <i className={!answerState ? 'fa fa-angle-down' : 'fa fa-angle-up'} ></i>
       </div>
       <p className={answerState ? classes.open : classes.closed}>{answer}</p>
     </div>

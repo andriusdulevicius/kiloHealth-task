@@ -60,12 +60,13 @@
 }
 
 .icon-empty {
-  color: var(--secondary-color);
-  background-color: var(--secondary-color);
-  border: none;
+  width:1.4rem;
+  height:1.4rem;
+  background: url('../../static/circle.svg') no-repeat;
 }
 
 .icon-filled {
-  color: var(--main-color);
-  font-weight: normal;
+  width:1.4rem;
+  height:1.4rem;
+  background: url('../../static/check-circle-orange.svg') no-repeat;
 }

@@ -3,24 +3,30 @@
 }
 .pros-list ul {
   list-style: none;
+  margin-top: 1rem;
   padding: 0;
 }
+
 .pros-list li {
   display: flex;
   align-items: center;
+  line-height: 1.5rem;
 }
 
-.pros-list i {
-  background-color: transparent;
-  color: rgb(12, 207, 12);
-  font-size: 2rem;
-  margin-right: 1rem;
-}
+
 
 .pros-list h5 {
   font-weight: normal;
   font-size: 1.1rem;
   margin: 0.3rem;
+}
+
+.icon {
+  width:1.4rem;
+  height:1.4rem;
+  margin-right: 1rem;
+  padding-right: 1.5rem;
+  background: url('../../../static/check_circle_outline.svg') no-repeat;
 }
 
 @media screen and (min-width: 1024px) {

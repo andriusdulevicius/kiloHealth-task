@@ -11,11 +11,20 @@
   border: none;
   height: 2.5rem;
   margin: 1rem 0;
+  cursor:pointer;
+  transform: scale(1);
+
 }
+
+
 
 @media screen and (min-width: 1024px) {
   .button {
     min-width: 22rem;
-    margin: 0 auto;
+    margin: 1rem auto;
+  }
+  .button:hover {
+    transform: scale(1.1) ;
+    transition: all 400ms ease;
   }
 }

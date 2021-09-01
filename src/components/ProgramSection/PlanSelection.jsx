@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PlanCard from './PlanCard';
 import Button from './../../UI/Button';
 import classes from './PlanSelection.module.css';
@@ -6,7 +5,7 @@ import image from '../../static/safe-checkout.png';
 import Subtitle from './../../UI/Subtitle';
 
 const PlanSelection = () => {
-  const [membershipPlans, setMembershipPlans] = useState([
+  const membershipPlans = [
     {
       id: 'p1',
       contractLength: 6,
@@ -28,7 +27,7 @@ const PlanSelection = () => {
       discountPercentage: 0,
       billPeriod: 1,
     },
-  ]);
+  ];
 
   return (
     <div className={classes.selection}>

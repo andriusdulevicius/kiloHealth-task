@@ -30,20 +30,14 @@ const PlanCard = ({ plan }) => {
             <span className={discountPercentage > 0 && classes['line-through']}> {`$${fullPeriodPrice}`}</span>
             {discountPercentage > 0 && (
               <span className={classes['main-color']}>{`$${fullPeriodDiscountedPrice}`}</span>
-            )}{' '}
+            )}
             billed every {billPeriod} months
           </h5>
         )}
       </div>
       <div>
-        <i
-          type='checkbox'
-          className={
-            checkedPlan
-              ? `fa fa-check-circle ${classes['icon-filled']}`
-              : `fa fa-check-circle-o ${classes['icon-empty']}`
-          }
-        />
+        <div className={checkedPlan ? classes['icon-filled'] : classes['icon-empty']}
+        ></div>
       </div>
     </div>
   );
