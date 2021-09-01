@@ -1,11 +1,11 @@
-# countries-towns backend
+# kiloHealth front end project
 
-This is a simple static app with no server logic.
+This is a simple static front end app with no server logic.
 ### Features
 
-1. select plans
-2. open up Q&A sliders
-3. carousel added for success stories (on mobile breakpoint)
+1. Select plans
+2. Open up Q&A sliders
+3. Carousel added for success stories (on mobile breakpoint)
 
 
 ## Instalation
