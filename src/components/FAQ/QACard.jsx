@@ -15,6 +15,7 @@ const QACard = (props) => {
         <h3>{question}</h3>
         <i className={!answerState ? 'fa fa-angle-down' : 'fa fa-angle-up'} ></i>
       </div>
+      {/* dynamic answer reveal */}
       <p className={answerState ? classes.open : classes.closed}>{answer}</p>
     </div>
   );

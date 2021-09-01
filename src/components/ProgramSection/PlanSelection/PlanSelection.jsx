@@ -7,6 +7,7 @@ import Subtitle from '../../Subtitle/Subtitle';
 
 const PlanSelection = () => {
   const [checkedPlan, setCheckedPlan] = useState(0);
+  // sample data
   const membershipPlans = [
     {
       id: 1,
@@ -36,6 +37,7 @@ const PlanSelection = () => {
       <Subtitle>
         Choose your plan and get <span className={classes['main-color']}>7 days free trial</span>
       </Subtitle>
+      {/* dynamic card creation & selection */}
       {membershipPlans.map((onePlan) => (
         <PlanCard plan={onePlan} key={onePlan.id} checkedPlan={checkedPlan} setCheckedPlan={setCheckedPlan} />
       ))}

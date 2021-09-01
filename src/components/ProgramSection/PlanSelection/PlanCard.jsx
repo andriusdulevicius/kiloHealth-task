@@ -10,6 +10,7 @@ const PlanCard = ({ plan, checkedPlan, setCheckedPlan }) => {
   const fullPeriodDiscountedPrice = +priceAfterDiscount * contractLength.toFixed(2);
 
   return (
+    // Setting active program state
     <div className={`${classes.card} ${checkedPlan === id && classes.active}`} onClick={() => setCheckedPlan(id)}>
       <div className={classes.details}>
         <h4>

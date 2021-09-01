@@ -11,6 +11,7 @@ import 'react-multi-carousel/lib/styles.css';
 
 
 const SuccessStories = () => {
+  // sample data
   const stories = [
     {
       id: 1,
@@ -43,7 +44,7 @@ const SuccessStories = () => {
         'I have many friends who practice yoga and I decided to try it myself. It is the best decision I have made in a long time. With Positive Yoga program I started to lose weight, which was demotivating me for a long time. Also, I’ve learned about yoga philosophy and poses that encourage me to practice mindfulness and pay attention to stress reduction. I am very proud of myself. Feeling better is my biggest motivation.',
     },
   ];
-
+  // Carousel setup
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -68,6 +69,7 @@ const SuccessStories = () => {
     <div className={classes.success}>
       <Subtitle>Hear success stories from our clients</Subtitle>
       <Carousel responsive={responsive}>
+        {/* dynamic card rendering */}
         {stories.map((story) => (
           <StoryCard key={story.id} story={story} />
         ))}

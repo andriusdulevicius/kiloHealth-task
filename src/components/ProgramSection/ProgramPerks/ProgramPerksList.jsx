@@ -4,6 +4,7 @@ import classes from './ProgramPerksList.module.css';
 import Subtitle from '../../Subtitle/Subtitle';
 
 const ProgramPerksList = () => {
+  // sample data
   const perks = [
     {
       icon: 'plan',
@@ -45,6 +46,7 @@ const ProgramPerksList = () => {
     <div className={classes['perk-list']}>
       <Subtitle>Whats in our program? </Subtitle>
       <ul>
+        {/* dynamic li generation */}
         {perks.map((perk) => (
           <PerkItem perk={perk} key={perk.title} />
         ))}

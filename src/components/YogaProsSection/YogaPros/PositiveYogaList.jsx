@@ -2,6 +2,7 @@ import classes from './PositiveYogaList.module.css';
 import Subtitle from '../../Subtitle/Subtitle';
 
 const PositiveYogaList = () => {
+  // sample data
   const yogaPros = [
     'Each program adapts to your age or fitness level',
     'Mindful way to exercise and get real results',

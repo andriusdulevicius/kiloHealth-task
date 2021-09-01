@@ -4,6 +4,7 @@ import QACard from './QACard';
 import classes from './Faq.module.css';
 
 const Faq = () => {
+  // sample data
   const questionsAnswers = [
     {
       id: 'q1',
