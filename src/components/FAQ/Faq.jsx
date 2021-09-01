@@ -1,5 +1,5 @@
-import Button from '../../UI/Button';
-import Subtitle from '../../UI/Subtitle';
+import Button from '../Button/Button';
+import Subtitle from '../Subtitle/Subtitle';
 import QACard from './QACard';
 import classes from './Faq.module.css';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Subtitle from '../../../UI/Subtitle';
+import Subtitle from '../../Subtitle/Subtitle';
 import image from '../../../static/phone.png';
 import classes from './YogaJourney.module.css';
 

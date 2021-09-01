@@ -1,5 +1,5 @@
 import classes from './PositiveYogaList.module.css';
-import Subtitle from '../../../UI/Subtitle';
+import Subtitle from '../../Subtitle/Subtitle';
 
 const PositiveYogaList = () => {
   const yogaPros = [

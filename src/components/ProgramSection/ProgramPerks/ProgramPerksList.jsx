@@ -1,7 +1,7 @@
 
 import PerkItem from './PerkItem';
 import classes from './ProgramPerksList.module.css';
-import Subtitle from './../../UI/Subtitle';
+import Subtitle from '../../Subtitle/Subtitle';
 
 const ProgramPerksList = () => {
   const perks = [

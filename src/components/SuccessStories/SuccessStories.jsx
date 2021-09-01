@@ -1,11 +1,11 @@
 
-import Subtitle from './../../UI/Subtitle';
+import Subtitle from '../Subtitle/Subtitle';
 import StoryCard from './StoryCard';
 import classes from './SuccessStories.module.css';
 import emilyImg from '../../static/succesStories/emily.jpeg';
 import kylieImg from '../../static/succesStories/kylie.jpeg';
 import jessicaImg from '../../static/succesStories/jessica.jpeg';
-import Button from './../../UI/Button';
+import Button from '../Button/Button';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 

@@ -1,4 +1,4 @@
-import Vector from './Vector';
+import { ReactComponent as Badge } from '../../static/icons/badge.svg';
 import Countdown from 'react-countdown';
 import classes from './DiscountPopup.module.css';
 
@@ -7,7 +7,7 @@ const DiscountPopup = () => {
 
   return (
     <div className={classes.discount}>
-      <Vector />
+      <Badge />
       <span>
         50% discount only valid for
         <strong>

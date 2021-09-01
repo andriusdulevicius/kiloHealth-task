@@ -1,21 +1,16 @@
-import { useState } from 'react';
 import classes from './PlanCard.module.css';
 
-const PlanCard = ({ plan }) => {
-  const [checkedPlan, setCheckedPlan] = useState(false);
-  const { contractLength, monthlyPrice, discountPercentage, billPeriod } = plan;
+const PlanCard = ({ plan, checkedPlan, setCheckedPlan }) => {
+
+  const { id, contractLength, monthlyPrice, discountPercentage, billPeriod } = plan;
 
   const priceAfterDiscount = +(monthlyPrice - (monthlyPrice * discountPercentage) / 100).toFixed(2);
 
   const fullPeriodPrice = (monthlyPrice * contractLength).toFixed(2);
   const fullPeriodDiscountedPrice = +priceAfterDiscount * contractLength.toFixed(2);
 
-  const planActivationHandler = () => {
-    setCheckedPlan(!checkedPlan);
-  };
-
   return (
-    <div className={`${classes.card} ${checkedPlan && classes.active}`} onClick={planActivationHandler}>
+    <div className={`${classes.card} ${checkedPlan === id && classes.active}`} onClick={() => setCheckedPlan(id)}>
       <div className={classes.details}>
         <h4>
           {contractLength} month plan
@@ -29,14 +24,14 @@ const PlanCard = ({ plan }) => {
           <h5>
             <span className={discountPercentage > 0 && classes['line-through']}> {`$${fullPeriodPrice}`}</span>
             {discountPercentage > 0 && (
-              <span className={classes['main-color']}>{`$${fullPeriodDiscountedPrice}`}</span>
+              <span className={classes['main-color']}>{`$${fullPeriodDiscountedPrice} `}</span>
             )}
             billed every {billPeriod} months
           </h5>
         )}
       </div>
       <div>
-        <div className={checkedPlan ? classes['icon-filled'] : classes['icon-empty']}
+        <div className={checkedPlan === id ? classes['icon-filled'] : classes['icon-empty']}
         ></div>
       </div>
     </div>

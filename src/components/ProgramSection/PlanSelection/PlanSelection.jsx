@@ -1,27 +1,29 @@
+import React, { useState } from 'react';
 import PlanCard from './PlanCard';
-import Button from './../../UI/Button';
+import Button from '../../Button/Button';
 import classes from './PlanSelection.module.css';
-import image from '../../static/safe-checkout.png';
-import Subtitle from './../../UI/Subtitle';
+import image from '../../../static/safe-checkout.png';
+import Subtitle from '../../Subtitle/Subtitle';
 
 const PlanSelection = () => {
+  const [checkedPlan, setCheckedPlan] = useState(0);
   const membershipPlans = [
     {
-      id: 'p1',
+      id: 1,
       contractLength: 6,
       monthlyPrice: 19.98,
       discountPercentage: 50,
       billPeriod: 6,
     },
     {
-      id: 'p2',
+      id: 2,
       contractLength: 3,
       monthlyPrice: 19.99,
       discountPercentage: 25,
       billPeriod: 3,
     },
     {
-      id: 'p3',
+      id: 3,
       contractLength: 1,
       monthlyPrice: 19.99,
       discountPercentage: 0,
@@ -35,7 +37,7 @@ const PlanSelection = () => {
         Choose your plan and get <span className={classes['main-color']}>7 days free trial</span>
       </Subtitle>
       {membershipPlans.map((onePlan) => (
-        <PlanCard plan={onePlan} key={onePlan.id} />
+        <PlanCard plan={onePlan} key={onePlan.id} checkedPlan={checkedPlan} setCheckedPlan={setCheckedPlan} />
       ))}
       <Button>Get your plan</Button>
       <div className={classes.agreement}>

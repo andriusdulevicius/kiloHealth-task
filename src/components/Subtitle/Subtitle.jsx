@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from './Subtitle.module.css';
 
 const Subtitle = (props) => {
